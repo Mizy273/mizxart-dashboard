@@ -190,12 +190,41 @@ export default function Dashboard() {
       }}
     >
       <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
-        <h1 style={{ margin: 0, fontSize: "36px", color: "white", fontWeight: 800 }}>
-          Mizxart Studio Dashboard
-        </h1>
-        <p style={{ color: "#94a3b8", marginTop: "8px" }}>
-          Customize all your needs
-        </p>
+       <div
+  style={{
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    gap: "16px",
+    flexWrap: "wrap",
+  }}
+>
+  <div>
+    <h1 style={{ margin: 0, fontSize: "36px", color: "white", fontWeight: 800 }}>
+      Mizxart Studio Dashboard
+    </h1>
+    <p style={{ color: "#94a3b8", marginTop: "8px" }}>
+      Customize all your needs
+    </p>
+  </div>
+
+  <button
+    onClick={async () => {
+      await supabase.auth.signOut();
+    }}
+    style={{
+      background: "transparent",
+      color: "white",
+      border: "1px solid rgba(255,255,255,0.15)",
+      padding: "12px 16px",
+      borderRadius: "14px",
+      cursor: "pointer",
+      fontWeight: 600,
+    }}
+  >
+    Logout
+  </button>
+</div>
 
         <div
           style={{
