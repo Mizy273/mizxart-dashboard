@@ -51,7 +51,7 @@ export default function Login() {
         }}
       >
         <h1 style={{ margin: 0, color: "white", fontSize: "32px" }}>
-          Mizxart Login
+          Mizxartstudio
         </h1>
         <p style={{ color: "#94a3b8", marginTop: "8px" }}>
           Login untuk akses dashboard studio
